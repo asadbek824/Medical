@@ -141,6 +141,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		592630F72CE71DFF00852513 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		592630F92CE71DFF00852513 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		59D651F22CE6123C002B3EA5 = {
 			isa = PBXGroup;
 			children = (
@@ -223,12 +237,20 @@
 					ProjectRef = 590977B72CE7117600C77D8F /* AIChatView.xcodeproj */;
 				},
 				{
+					ProductGroup = 592630F92CE71DFF00852513 /* Products */;
+					ProjectRef = 59005B012CE6183E009F5522 /* Core.xcodeproj */;
+				},
+				{
 					ProductGroup = 590977F82CE7170600C77D8F /* Products */;
 					ProjectRef = 590977F72CE7170600C77D8F /* DoctorsChatDemoApp.xcodeproj */;
 				},
 				{
 					ProductGroup = 5909773D2CE64B3100C77D8F /* Products */;
 					ProjectRef = 5909773C2CE64B3100C77D8F /* HomeDemoApp.xcodeproj */;
+				},
+				{
+					ProductGroup = 592630F72CE71DFF00852513 /* Products */;
+					ProjectRef = 590977752CE6519600C77D8F /* NetworkManager.xcodeproj */;
 				},
 				{
 					ProductGroup = 59005AE62CE61816009F5522 /* Products */;
