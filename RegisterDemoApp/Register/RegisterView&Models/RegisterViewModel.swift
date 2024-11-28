@@ -47,6 +47,7 @@ final class RegisterViewModel: ObservableObject {
                     self?.userVerificateCode = model.confirmationCode
                     UserDefaults.standard.setValue(model.user?._id, forKey: "userId")
                     UserDefaults.standard.setValue(model.user?.isDoctor, forKey: "isDoctor")
+                    UserDefaults.standard.setValue(model.user?.fullName, forKey: "userFullName")
                     withAnimation(.easeInOut(duration: 0.3)) {
                         self?.codeViewPresented = true
                     }
@@ -106,6 +107,7 @@ final class RegisterViewModel: ObservableObject {
                     UserDefaults.standard.setValue(model.user?._id, forKey: "userId")
                     UserDefaults.standard.setValue(model.user?.isDoctor, forKey: "isDoctor")
                     UserDefaults.standard.setValue(true, forKey: "isRegistreted")
+                    UserDefaults.standard.setValue(model.user?.fullName, forKey: "userFullName")
                 }
             } catch {
                 

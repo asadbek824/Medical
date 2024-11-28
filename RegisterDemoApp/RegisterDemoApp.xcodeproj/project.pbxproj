@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		59005BF42CE61932009F5522 /* Register.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59005BEE2CE61932009F5522 /* Register.framework */; };
-		59005BF52CE61932009F5522 /* Register.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 59005BEE2CE61932009F5522 /* Register.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		59005C102CE61B4A009F5522 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59005C0F2CE61B4A009F5522 /* Core.framework */; };
 		5909777E2CE6525600C77D8F /* NetworkManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5909777D2CE6525600C77D8F /* NetworkManager.framework */; };
 /* End PBXBuildFile section */
@@ -22,20 +21,6 @@
 			remoteInfo = Register;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		59005BFA2CE61932009F5522 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				59005BF52CE61932009F5522 /* Register.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		59005AD42CE61815009F5522 /* RegisterDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RegisterDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,7 +124,6 @@
 				59005AD02CE61815009F5522 /* Sources */,
 				59005AD12CE61815009F5522 /* Frameworks */,
 				59005AD22CE61815009F5522 /* Resources */,
-				59005BFA2CE61932009F5522 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

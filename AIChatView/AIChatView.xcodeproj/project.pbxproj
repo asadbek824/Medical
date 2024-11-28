@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		590977C82CE7119000C77D8F /* AIChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 590977C22CE7119000C77D8F /* AIChat.framework */; };
-		590977C92CE7119000C77D8F /* AIChat.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 590977C22CE7119000C77D8F /* AIChat.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5926315F2CE7B94F00852513 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5926315E2CE7B94F00852513 /* Core.framework */; };
+		592631632CE7B95400852513 /* NetworkManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 592631622CE7B95400852513 /* NetworkManager.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -21,23 +22,11 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		590977CE2CE7119000C77D8F /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				590977C92CE7119000C77D8F /* AIChat.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		590977A62CE7117300C77D8F /* AIChatView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIChatView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		590977C22CE7119000C77D8F /* AIChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AIChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5926315E2CE7B94F00852513 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		592631622CE7B95400852513 /* NetworkManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -79,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5926315F2CE7B94F00852513 /* Core.framework in Frameworks */,
+				592631632CE7B95400852513 /* NetworkManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +81,7 @@
 			children = (
 				590977A82CE7117300C77D8F /* AIChatView */,
 				590977C32CE7119000C77D8F /* AIChat */,
+				5926315D2CE7B94F00852513 /* Frameworks */,
 				590977A72CE7117300C77D8F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,6 +93,15 @@
 				590977C22CE7119000C77D8F /* AIChat.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		5926315D2CE7B94F00852513 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				592631622CE7B95400852513 /* NetworkManager.framework */,
+				5926315E2CE7B94F00852513 /* Core.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,7 +124,6 @@
 				590977A22CE7117300C77D8F /* Sources */,
 				590977A32CE7117300C77D8F /* Frameworks */,
 				590977A42CE7117300C77D8F /* Resources */,
-				590977CE2CE7119000C77D8F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct MedicalApp: App {
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .preferredColorScheme(.light)
         }
     }
 }

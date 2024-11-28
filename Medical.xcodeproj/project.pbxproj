@@ -7,14 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		59005BFE2CE61941009F5522 /* Register.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59005BFD2CE61941009F5522 /* Register.framework */; };
-		590977572CE64B6000C77D8F /* Home.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 590977562CE64B6000C77D8F /* Home.framework */; };
 		590977822CE6525F00C77D8F /* NetworkManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 590977812CE6525F00C77D8F /* NetworkManager.framework */; };
 		590977832CE6525F00C77D8F /* NetworkManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 590977812CE6525F00C77D8F /* NetworkManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		590977852CE6526700C77D8F /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 590977842CE6526700C77D8F /* Core.framework */; };
 		590977862CE6526700C77D8F /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 590977842CE6526700C77D8F /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		590977D52CE7120700C77D8F /* AIChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 590977D42CE7120700C77D8F /* AIChat.framework */; };
-		590978162CE7177100C77D8F /* DoctorChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 590978152CE7177100C77D8F /* DoctorChat.framework */; };
+		592631422CE7B81300852513 /* AIChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 590977D42CE7120700C77D8F /* AIChat.framework */; };
+		592631432CE7B81300852513 /* AIChat.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 590977D42CE7120700C77D8F /* AIChat.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		592631442CE7B81500852513 /* DoctorChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 590978152CE7177100C77D8F /* DoctorChat.framework */; };
+		592631452CE7B81500852513 /* DoctorChat.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 590978152CE7177100C77D8F /* DoctorChat.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		592631462CE7B81700852513 /* Home.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 590977562CE64B6000C77D8F /* Home.framework */; };
+		592631472CE7B81700852513 /* Home.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 590977562CE64B6000C77D8F /* Home.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		592631482CE7B81900852513 /* MedicalPreparet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5926313B2CE72C3100852513 /* MedicalPreparet.framework */; };
+		592631492CE7B81900852513 /* MedicalPreparet.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5926313B2CE72C3100852513 /* MedicalPreparet.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5926314A2CE7B81B00852513 /* Register.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59005BFD2CE61941009F5522 /* Register.framework */; };
+		5926314B2CE7B81B00852513 /* Register.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 59005BFD2CE61941009F5522 /* Register.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5926327F2CE8330B00852513 /* StreamVideo in Frameworks */ = {isa = PBXBuildFile; productRef = 5926327E2CE8330B00852513 /* StreamVideo */; };
+		592632812CE8330B00852513 /* StreamVideoSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 592632802CE8330B00852513 /* StreamVideoSwiftUI */; };
+		592632832CE8330B00852513 /* StreamVideoUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 592632822CE8330B00852513 /* StreamVideoUIKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +55,13 @@
 			remoteGlobalIDString = 590978022CE7172200C77D8F;
 			remoteInfo = DoctorChat;
 		};
+		5926313A2CE72C3100852513 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5926311C2CE72B6200852513 /* MedicalPreparetDemoApp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 592631272CE72BCA00852513;
+			remoteInfo = MedicalPreparet;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,8 +71,13 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				592631432CE7B81300852513 /* AIChat.framework in Embed Frameworks */,
 				590977832CE6525F00C77D8F /* NetworkManager.framework in Embed Frameworks */,
 				590977862CE6526700C77D8F /* Core.framework in Embed Frameworks */,
+				592631472CE7B81700852513 /* Home.framework in Embed Frameworks */,
+				5926314B2CE7B81B00852513 /* Register.framework in Embed Frameworks */,
+				592631452CE7B81500852513 /* DoctorChat.framework in Embed Frameworks */,
+				592631492CE7B81900852513 /* MedicalPreparet.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,6 +93,7 @@
 		590977842CE6526700C77D8F /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		590977B72CE7117600C77D8F /* AIChatView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AIChatView.xcodeproj; path = AIChatView/AIChatView.xcodeproj; sourceTree = "<group>"; };
 		590977F72CE7170600C77D8F /* DoctorsChatDemoApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DoctorsChatDemoApp.xcodeproj; path = DoctorsChatDemoApp/DoctorsChatDemoApp.xcodeproj; sourceTree = "<group>"; };
+		5926311C2CE72B6200852513 /* MedicalPreparetDemoApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MedicalPreparetDemoApp.xcodeproj; path = MedicalPreparetDemoApp/MedicalPreparetDemoApp.xcodeproj; sourceTree = "<group>"; };
 		59D651FB2CE6123C002B3EA5 /* Medical.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Medical.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -88,12 +110,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				592631462CE7B81700852513 /* Home.framework in Frameworks */,
 				590977822CE6525F00C77D8F /* NetworkManager.framework in Frameworks */,
-				590978162CE7177100C77D8F /* DoctorChat.framework in Frameworks */,
-				59005BFE2CE61941009F5522 /* Register.framework in Frameworks */,
-				590977D52CE7120700C77D8F /* AIChat.framework in Frameworks */,
-				590977572CE64B6000C77D8F /* Home.framework in Frameworks */,
 				590977852CE6526700C77D8F /* Core.framework in Frameworks */,
+				592632832CE8330B00852513 /* StreamVideoUIKit in Frameworks */,
+				592632812CE8330B00852513 /* StreamVideoSwiftUI in Frameworks */,
+				592631422CE7B81300852513 /* AIChat.framework in Frameworks */,
+				5926314A2CE7B81B00852513 /* Register.framework in Frameworks */,
+				592631442CE7B81500852513 /* DoctorChat.framework in Frameworks */,
+				5926327F2CE8330B00852513 /* StreamVideo in Frameworks */,
+				592631482CE7B81900852513 /* MedicalPreparet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,10 +181,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		5926311D2CE72B6200852513 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5926313B2CE72C3100852513 /* MedicalPreparet.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		59D651F22CE6123C002B3EA5 = {
 			isa = PBXGroup;
 			children = (
 				59D651FD2CE6123C002B3EA5 /* Medical */,
+				5926311C2CE72B6200852513 /* MedicalPreparetDemoApp.xcodeproj */,
 				590977F72CE7170600C77D8F /* DoctorsChatDemoApp.xcodeproj */,
 				590977B72CE7117600C77D8F /* AIChatView.xcodeproj */,
 				5909773C2CE64B3100C77D8F /* HomeDemoApp.xcodeproj */,
@@ -199,6 +234,9 @@
 			);
 			name = Medical;
 			packageProductDependencies = (
+				5926327E2CE8330B00852513 /* StreamVideo */,
+				592632802CE8330B00852513 /* StreamVideoSwiftUI */,
+				592632822CE8330B00852513 /* StreamVideoUIKit */,
 			);
 			productName = Medical;
 			productReference = 59D651FB2CE6123C002B3EA5 /* Medical.app */;
@@ -228,6 +266,9 @@
 			);
 			mainGroup = 59D651F22CE6123C002B3EA5;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5926327D2CE8330B00852513 /* XCRemoteSwiftPackageReference "stream-video-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 59D651FC2CE6123C002B3EA5 /* Products */;
 			projectDirPath = "";
@@ -247,6 +288,10 @@
 				{
 					ProductGroup = 5909773D2CE64B3100C77D8F /* Products */;
 					ProjectRef = 5909773C2CE64B3100C77D8F /* HomeDemoApp.xcodeproj */;
+				},
+				{
+					ProductGroup = 5926311D2CE72B6200852513 /* Products */;
+					ProjectRef = 5926311C2CE72B6200852513 /* MedicalPreparetDemoApp.xcodeproj */;
 				},
 				{
 					ProductGroup = 592630F72CE71DFF00852513 /* Products */;
@@ -291,6 +336,13 @@
 			fileType = wrapper.framework;
 			path = DoctorChat.framework;
 			remoteRef = 590978142CE7177100C77D8F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5926313B2CE72C3100852513 /* MedicalPreparet.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MedicalPreparet.framework;
+			remoteRef = 5926313A2CE72C3100852513 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -440,18 +492,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Medical/Medical.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Medical/Preview Content\"";
 				DEVELOPMENT_TEAM = 3DJM2CZRX2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = HealthTrack;
+				"INFOPLIST_KEY_CFBundleDisplayName[sdk=iphoneos*]" = HealthTrack;
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "We need access to your health data to display metrics.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -475,18 +530,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Medical/Medical.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Medical/Preview Content\"";
 				DEVELOPMENT_TEAM = 3DJM2CZRX2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = HealthTrack;
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "We need access to your health data to display metrics.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -527,6 +584,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5926327D2CE8330B00852513 /* XCRemoteSwiftPackageReference "stream-video-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GetStream/stream-video-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.14.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5926327E2CE8330B00852513 /* StreamVideo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5926327D2CE8330B00852513 /* XCRemoteSwiftPackageReference "stream-video-swift" */;
+			productName = StreamVideo;
+		};
+		592632802CE8330B00852513 /* StreamVideoSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5926327D2CE8330B00852513 /* XCRemoteSwiftPackageReference "stream-video-swift" */;
+			productName = StreamVideoSwiftUI;
+		};
+		592632822CE8330B00852513 /* StreamVideoUIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5926327D2CE8330B00852513 /* XCRemoteSwiftPackageReference "stream-video-swift" */;
+			productName = StreamVideoUIKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 59D651F32CE6123C002B3EA5 /* Project object */;
 }
