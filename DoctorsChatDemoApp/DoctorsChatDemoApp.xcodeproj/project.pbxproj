@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		590978082CE7172200C77D8F /* DoctorChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 590978022CE7172200C77D8F /* DoctorChat.framework */; };
-		590978092CE7172200C77D8F /* DoctorChat.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 590978022CE7172200C77D8F /* DoctorChat.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		592631572CE7B94200852513 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 592631562CE7B94200852513 /* Core.framework */; };
+		5926315B2CE7B94600852513 /* NetworkManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5926315A2CE7B94600852513 /* NetworkManager.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -21,23 +22,11 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		5909780E2CE7172200C77D8F /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				590978092CE7172200C77D8F /* DoctorChat.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		590977E62CE7170400C77D8F /* DoctorsChatDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoctorsChatDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		590978022CE7172200C77D8F /* DoctorChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DoctorChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		592631562CE7B94200852513 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5926315A2CE7B94600852513 /* NetworkManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -79,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				592631572CE7B94200852513 /* Core.framework in Frameworks */,
+				5926315B2CE7B94600852513 /* NetworkManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +81,7 @@
 			children = (
 				590977E82CE7170400C77D8F /* DoctorsChatDemoApp */,
 				590978032CE7172200C77D8F /* DoctorChat */,
+				592631552CE7B94200852513 /* Frameworks */,
 				590977E72CE7170400C77D8F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,6 +93,15 @@
 				590978022CE7172200C77D8F /* DoctorChat.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		592631552CE7B94200852513 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5926315A2CE7B94600852513 /* NetworkManager.framework */,
+				592631562CE7B94200852513 /* Core.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,7 +124,6 @@
 				590977E22CE7170400C77D8F /* Sources */,
 				590977E32CE7170400C77D8F /* Frameworks */,
 				590977E42CE7170400C77D8F /* Resources */,
-				5909780E2CE7172200C77D8F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -192,7 +192,6 @@
 			mainGroup = 590977DD2CE7170400C77D8F;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				590978182CE71D1200C77D8F /* XCRemoteSwiftPackageReference "stream-video-swift" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 590977E72CE7170400C77D8F /* Products */;
@@ -549,17 +548,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		590978182CE71D1200C77D8F /* XCRemoteSwiftPackageReference "stream-video-swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/GetStream/stream-video-swift";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.14.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 590977DE2CE7170400C77D8F /* Project object */;
 }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ChatMessage: Identifiable {
+struct ChatMessage: Identifiable, Hashable {
     let id = UUID()
     let text: String
     let isUserMessage: Bool

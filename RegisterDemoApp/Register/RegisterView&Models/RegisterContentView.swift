@@ -88,6 +88,7 @@ extension RegisterContentView {
                         if vm.codeViewPresented {
                             vm.checkCode()
                         } else {
+                            vm.codeViewPresented = true
                             vm.sendInfoForBac()
                         }
                     }
